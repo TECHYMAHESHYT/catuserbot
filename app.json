@@ -1,7 +1,7 @@
 {
-  "name": "Catuserbot",
-  "description": "Userbot created by https://t.me/mrconfused contact @catuserbot_support for support and Custom fork by @Jisan7509",
-  "logo": "https://telegra.ph/file/3d60313110c58684b31ea.jpg",
+  "name": "Darkcrewuserbot",
+  "description": "Userbot created by https://t.me/darkcrewuserbot contact @Techyyt for support and Custom fork by @techyyt",
+  "logo": "https://telegra.ph/file/a1ee4d56fbe7f5f658f90.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Jisan09/catuserbot/",
-  "website": "#TODO",
-  "success_url": "#TODO",
+  "repository": "https://github.com/Techymaheshyt/darkcrewuserbot/",
+  "website": "pgsharp india",
+  "success_url": pgsharpindia.blogspot.com",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
@@ -23,7 +23,7 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Give your name, like Jisan",
+      "description": "Give your name, like Techy",
       "value": ""
     },
     "APP_ID": {
@@ -93,7 +93,7 @@
     },
     "UB_BLACK_LIST_CHAT": {
       "description": "set blacklist_chats where you do not want userbot features",
-      "value": "-1051754159",
+      "value": "",
       "required": false
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
