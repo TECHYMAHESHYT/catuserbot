@@ -21,11 +21,11 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         query = event.text
         hmm = re.compile("secret (.*) (.*)")
         match = re.findall(hmm, query)
-        if query.startswith("**Catuserbot") and event.query.user_id == bot.uid:
+        if query.startswith("**DarkcrewUserbot") and event.query.user_id == bot.uid:
             buttons = [
                 (
                     custom.Button.inline("Stats", data="stats"),
-                    Button.url("Repo", "https://github.com/Jisan09/catuserbot"),
+                    Button.url("Repo", "https://github.com/techymaheshyt/darkcrewusrbot"),
                 )
             ]
             if CAT_IMG and CAT_IMG.endswith((".jpg", ".png")):
@@ -38,13 +38,13 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             elif CAT_IMG:
                 result = builder.document(
                     CAT_IMG,
-                    title="Alive cat",
+                    title="Alive Darkcrew",
                     text=query,
                     buttons=buttons,
                 )
             else:
                 result = builder.article(
-                    title="Alive cat",
+                    title="Alive Darkcrew",
                     text=query,
                     buttons=buttons,
                 )
@@ -159,7 +159,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Yeh mera maal hai !! Haat kese laga diya be tune ise? \n\nNikal, jaake apna catuserbot bana..."
+            reply_pop_up_alert = "Yeh mera maal hai !! Haat kese laga diya be tune ise? \n\nNikal, jaake apna Darkcrewuserbot bana..."
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(
@@ -176,7 +176,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Yeh mera maal hai !! Haat kese laga diya be tune ise? \n\nNikal, jaake apna catuserbot bana..."
+            reply_pop_up_alert = "Yeh mera maal hai !! Haat kese laga diya be tune ise? \n\nNikal, jaake apna Darkcrewuserbot bana..."
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"secret_(.*)")))
@@ -219,7 +219,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             else:
                 reply_pop_up_alert = help_string
             reply_pop_up_alert += (
-                "Use .unload {} to remove this plugin ©catuserbot".format(plugin_name)
+                "Use .unload {} to remove this plugin ©Darkcrewuserbot".format(plugin_name)
             )
             try:
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
@@ -235,7 +235,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                         caption=plugin_name,
                     )
         else:
-            reply_pop_up_alert = "Yeh mera maal hai !! Haat kese laga diya be tune ise? \n\nNikal, jaake apna catuserbot bana..."
+            reply_pop_up_alert = "Yeh mera maal hai !! Haat kese laga diya be tune ise? \n\nNikal, jaake apna Darkcrewuserbot bana..."
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
@@ -243,7 +243,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if event.query.user_id == bot.uid:
             await event.edit("menu closed")
         else:
-            reply_pop_up_alert = "Yeh mera maal hai !! Haat kese laga diya be tune ise? \n\nNikal, jaake apna catuserbot bana..."
+            reply_pop_up_alert = "Yeh mera maal hai !! Haat kese laga diya be tune ise? \n\nNikal, jaake apna Darkcrewuserbot bana..."
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"stats")))
