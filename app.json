@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/Techymaheshyt/darkcrewuserbot/",
   "website": "pgsharpindia.blogspot.com",
-  "success_url":/welcome",
+  "success_url": #none",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
