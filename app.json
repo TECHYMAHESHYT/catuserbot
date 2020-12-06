@@ -10,8 +10,8 @@
     "productivity"
   ],
   "repository": "https://github.com/Techymaheshyt/darkcrewuserbot/",
-  "website": "pgsharp india",
-  "success_url": pgsharpindia.blogspot.com",
+  "website": "pgsharpindia.blogspot.com",
+  "success_url":/welcome",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
